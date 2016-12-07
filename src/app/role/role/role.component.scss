@@ -1,0 +1,31 @@
+.title {
+  display: block;
+  //margin-left: 10px;
+}
+.role-title {
+  width: inherit;
+  height: 20px;
+  left: 10px;
+  top: 27px;
+}
+.role-short-title {
+  margin-bottom: 10px;
+}
+.role-container {
+  border-top: 2px solid #b92b27;
+  text-align: center;
+}
+.role-header {
+  background-color: #0d4e85;
+}
+.role-footer {
+  background-color: #0d4e86;
+}
+.chart-container {
+  display: inline-block;
+  width: 30%;
+  min-width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  margin: 5px;
+}

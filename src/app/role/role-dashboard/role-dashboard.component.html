@@ -1,0 +1,5 @@
+<div class="role-dashboard-container">
+  <div *ngIf="user">
+    <app-role [role]="role" *ngFor="let role of user.roles"></app-role>
+  </div>
+</div>

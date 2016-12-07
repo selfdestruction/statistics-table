@@ -1,0 +1,28 @@
+<header>
+  <div id="header">
+    <a class="home-link" routerLink="/chart/">
+      <img class="logo" src="https://i.imgur.com/J303pQ4.png">
+    </a>
+    <div class="header-text">
+      <div class="left">
+        <h1 class="name">
+          <a routerLink="/" class="app-title">Statistic table</a>
+        </h1>
+        <span class="header-nav">
+          <a routerLink="/chart/">add</a>
+          <span class="divider">
+            |
+          </span>
+          <a routerLink="/dashboard/">show</a>
+          <span class="divider">
+            |
+          </span>
+          <a routerLink="/main/">main</a>
+        </span>
+      </div>
+      <div *ngIf="user" class="info">
+        <a routerLink="/main/">Привет, {{ user.name }}.</a>
+      </div>
+    </div>
+  </div>
+</header>

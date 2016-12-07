@@ -1,0 +1,15 @@
+<div [@roleContainer]="roleContainer" class="role-container">
+  <div (click)="onHeaderClick(role.methods.getCharts)" class="role-header">
+    <span class="title role-title">{{role.title}}</span>
+    <span class="title role-short-title">{{role.short_title}}</span>
+  </div>
+  <div *ngIf="showBody" [@roleBody]="roleBody" class="role-body">
+    <div class="chart-container" *ngFor="let chart of charts">
+      <app-chart [chartData]="chart" [identificator]="role.id+chart.id"></app-chart>
+    </div>
+  </div>
+  <!--<div class="role-footer">-->
+    <!--role footer-->
+  <!--</div>-->
+</div>
+

@@ -1,0 +1,10 @@
+<div class="main">
+  <div *ngIf="data">
+    <span>Привет, {{ data.name }}. </span>
+    <div class="container">
+      <ul>
+        <li *ngFor="let role of data.roles">{{role.title}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
