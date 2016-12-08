@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { UserRoleManagerComponent } from './user-role-manager.component';
+import { UserManagerComponent } from './user-manager.component';
 
 describe('UserRoleManagerComponent', () => {
-  let component: UserRoleManagerComponent;
-  let fixture: ComponentFixture<UserRoleManagerComponent>;
+  let component: UserManagerComponent;
+  let fixture: ComponentFixture<UserManagerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserRoleManagerComponent ]
+      declarations: [ UserManagerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserRoleManagerComponent);
+    fixture = TestBed.createComponent(UserManagerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

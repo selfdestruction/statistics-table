@@ -16,7 +16,8 @@ import { MainComponent } from './main/main.component';
 import { RoleDashboardComponent } from './role/role-dashboard/role-dashboard.component';
 import { RoleComponent } from './role/role/role.component';
 import { AdminComponent } from './admin/admin/admin.component';
-import { UserRoleManagerComponent } from './admin/user-role-manager/user-role-manager.component';
+import { UserManagerComponent } from './admin/user-manager/user-manager.component';
+import { RoleManagerComponent } from './admin/role-manager/role-manager.component';
 
 
 
@@ -30,7 +31,8 @@ import { UserRoleManagerComponent } from './admin/user-role-manager/user-role-ma
     RoleDashboardComponent,
     RoleComponent,
     AdminComponent,
-    UserRoleManagerComponent
+    UserManagerComponent,
+    RoleManagerComponent
   ],
   imports: [
     BrowserModule,

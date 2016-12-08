@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { routerTransition } from "../../router.animations";
 
 @Component({
-  selector: 'app-admin',
+  selector: 'app-user-manager',
   animations: [routerTransition()],
-  host: {'[@routerTransition]': ''},
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.scss']
+  templateUrl: './user-manager.component.html',
+  styleUrls: ['./user-manager.component.scss']
 })
-export class AdminComponent implements OnInit {
+export class UserManagerComponent implements OnInit {
 
   constructor() { }
 
