@@ -5,7 +5,7 @@ body {
 
 /* Toggle Styles */
 
-#wrapper {
+#admin-wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -13,7 +13,7 @@ body {
   transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
+#admin-wrapper.toggled {
   padding-left: 250px;
 }
 
@@ -32,7 +32,7 @@ body {
   transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
+#admin-wrapper.toggled #sidebar-wrapper {
   width: 250px;
 }
 
@@ -42,7 +42,7 @@ body {
   padding: 15px;
 }
 
-#wrapper.toggled #page-content-wrapper {
+#admin-wrapper.toggled #page-content-wrapper {
   position: absolute;
   margin-right: -250px;
 }
@@ -96,11 +96,11 @@ body {
 }
 
 @media(min-width:768px) {
-  #wrapper {
+  #admin-wrapper {
     padding-left: 250px;
   }
 
-  #wrapper.toggled {
+  #admin-wrapper.toggled {
     padding-left: 0;
   }
 
@@ -108,7 +108,7 @@ body {
     width: 250px;
   }
 
-  #wrapper.toggled #sidebar-wrapper {
+  #admin-wrapper.toggled #sidebar-wrapper {
     width: 0;
   }
 
@@ -117,7 +117,7 @@ body {
     position: relative;
   }
 
-  #wrapper.toggled #page-content-wrapper {
+  #admin-wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0;
   }
