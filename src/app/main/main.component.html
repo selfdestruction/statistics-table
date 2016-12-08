@@ -1,10 +1,5 @@
-<div class="main">
-  <div *ngIf="data">
-    <span>Привет, {{ data.name }}. </span>
-    <div class="container">
-      <ul>
-        <li *ngFor="let role of data.roles">{{role.title}}</li>
-      </ul>
-    </div>
-  </div>
+<div class="main-component">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>

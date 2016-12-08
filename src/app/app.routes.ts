@@ -5,11 +5,16 @@ import { RoleDashboardComponent } from "./role/role-dashboard/role-dashboard.com
 import { AdminComponent } from "./admin/admin/admin.component";
 
 const routes: Routes = [
-    {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-    {path: 'chart', component: MainComponent},
-    {path: 'main', component: MainComponent},
-    {path: 'dashboard', component: RoleDashboardComponent},
-    {path: 'admin', component: AdminComponent}
+    {path: '', redirectTo: 'user', pathMatch: 'full'},
+    {path: 'user', component: MainComponent,
+        children: [
+            {path: 'dashboard', component: RoleDashboardComponent}
+        ]
+    },
+    {path: 'admin', component: AdminComponent},
+    {path: '**', redirectTo: 'user', pathMatch: 'full'}
 ];
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes, {
+    useHash: true
+});
