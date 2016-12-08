@@ -5,6 +5,7 @@ import { RoleDashboardComponent } from "./role/role-dashboard/role-dashboard.com
 import { AdminComponent } from "./admin/admin/admin.component";
 import { UserManagerComponent } from "./admin/user-manager/user-manager.component";
 import { RoleManagerComponent } from "./admin/role-manager/role-manager.component";
+import { ChartManagerComponent } from "./admin/chart-manager/chart-manager.component";
 
 const routes: Routes = [
     {path: '', redirectTo: 'user', pathMatch: 'full'},
@@ -16,6 +17,7 @@ const routes: Routes = [
     {path: 'admin', component: AdminComponent,
       children: [
         {path: 'user-manager', component: UserManagerComponent},
+        {path: 'chart-manager', component: ChartManagerComponent},
         {path: 'role-manager', component: RoleManagerComponent}
       ]
     },

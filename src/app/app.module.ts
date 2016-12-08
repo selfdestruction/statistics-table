@@ -18,6 +18,7 @@ import { RoleComponent } from './role/role/role.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { UserManagerComponent } from './admin/user-manager/user-manager.component';
 import { RoleManagerComponent } from './admin/role-manager/role-manager.component';
+import { ChartManagerComponent } from './admin/chart-manager/chart-manager.component';
 
 
 
@@ -32,7 +33,8 @@ import { RoleManagerComponent } from './admin/role-manager/role-manager.componen
     RoleComponent,
     AdminComponent,
     UserManagerComponent,
-    RoleManagerComponent
+    RoleManagerComponent,
+    ChartManagerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from "../../router.animations";
+import { APIService } from "../../services/api.service";
 
 @Component({
   selector: 'app-user-manager',
@@ -9,9 +10,27 @@ import { routerTransition } from "../../router.animations";
 })
 export class UserManagerComponent implements OnInit {
 
-  constructor() { }
+  rolesUrl: string;
+  usersUrl: string;
 
-  ngOnInit() {
+  constructor(private  _apiService: APIService) {
+
+    this.rolesUrl = '/admin/role';
+    this.usersUrl = '/admin/user';
+
+    this._apiService.fetch(this.rolesUrl).subscribe(
+        result => {
+          console.log(result);
+        }
+    );
+    this._apiService.fetch(this.usersUrl).subscribe(
+        result => {
+          console.log(result);
+        }
+    );
   }
 
+  ngOnInit() {
+
+  }
 }
