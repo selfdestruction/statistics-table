@@ -15,9 +15,8 @@ import 'core-js/es6/map';
 import 'core-js/es6/set';
 import 'core-js/es6/reflect';
 
-import 'bootstrap';
-import 'chosen-js';
-import 'bootstrap-daterangepicker';
+//import 'bootstrap';
+//import 'bootstrap-daterangepicker';
 
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';

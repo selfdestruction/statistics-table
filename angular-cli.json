@@ -26,7 +26,8 @@
       ],
       "scripts": [
         "../node_modules/hammerjs/hammer.min.js",
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap-chosen/dist/chosen.jquery-1.4.2/chosen.jquery.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
