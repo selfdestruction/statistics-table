@@ -20,6 +20,7 @@ import { UserManagerComponent } from './admin/user-manager/user-manager.componen
 import { RoleManagerComponent } from './admin/role-manager/role-manager.component';
 import { ChartManagerComponent } from './admin/chart-manager/chart-manager.component';
 import { DatePickerDirective } from './directives/date-picker.directive';
+import { ChosenDirective } from './directives/chosen.directive';
 
 
 
@@ -36,7 +37,8 @@ import { DatePickerDirective } from './directives/date-picker.directive';
     UserManagerComponent,
     RoleManagerComponent,
     ChartManagerComponent,
-    DatePickerDirective
+    DatePickerDirective,
+    ChosenDirective
   ],
   imports: [
     BrowserModule,
