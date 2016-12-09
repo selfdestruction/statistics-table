@@ -13,6 +13,9 @@ export class UserManagerComponent implements OnInit {
   rolesUrl: string;
   usersUrl: string;
 
+  users;
+  roles;
+
   constructor(private  _apiService: APIService) {
 
     this.rolesUrl = '/admin/role';
@@ -20,12 +23,14 @@ export class UserManagerComponent implements OnInit {
 
     this._apiService.fetch(this.rolesUrl).subscribe(
         result => {
+          this.roles = result;
           console.log(result);
         }
     );
     this._apiService.fetch(this.usersUrl).subscribe(
         result => {
-          console.log(result);
+          this.users = result;
+          //console.log(result);
         }
     );
   }

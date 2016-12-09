@@ -1,7 +1,8 @@
 <div class="user-manager-container" [@routerTransition]="">
-
-  <p>
-    user-role-manager works!
-  </p>
+  <input appDatePicker #input>
+  {{ input.value }}
+  <div class="row" *ngFor="let user of users">
+    {{ user.name }} {{ user.lastName }}
+  </div>
 </div>
 
