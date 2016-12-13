@@ -2,11 +2,11 @@
   <input appDatePicker #input>
   {{ input.value }}
   <div class="col-lg-6">
-    <select appChosen multiple data-placeholder="Choose a Country" class="chosen chzn-done" tabindex="2">
+    <select (onChange)="onChange($event)" appChosen multiple data-placeholder="Choose a Country" class="chosen chzn-done" tabindex="2">
       <option value=""></option>
-      <option value="United States">United States</option>
+      <option selected value="United States">United States</option>
       <option value="United Kingdom">United Kingdom</option>
-      <option value="Afghanistan">Afghanistan</option>
+      <option selected value="Afghanistan">Afghanistan</option>
       </select>
     </div>
 </div>

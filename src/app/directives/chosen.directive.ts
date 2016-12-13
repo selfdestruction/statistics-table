@@ -1,4 +1,4 @@
-import { Directive, ElementRef } from '@angular/core';
+import {Directive, ElementRef, Output, EventEmitter} from '@angular/core';
 import * as $ from 'jquery';
 // import "bootstrap-chosen/dist/chosen.jquery-1.4.2/chosen.jquery.js"
 
@@ -8,9 +8,15 @@ import * as $ from 'jquery';
 })
 export class ChosenDirective {
 
+  @Output() onChange = new EventEmitter();
   constructor(private el: ElementRef) {}
   ngAfterViewInit() {
-    $(this.el.nativeElement).css('color','red');
-    $(this.el.nativeElement).chosen();
+    // $(this.el.nativeElement).css('color','red');
+    let self = this;
+    $(this.el.nativeElement).chosen().change(function(){
+      self.onChange.emit({
+        value: $(this).val()
+      });
+    });
   }
 }

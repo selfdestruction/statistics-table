@@ -35,6 +35,10 @@ export class UserManagerComponent implements OnInit {
     );
   }
 
+  onChange(event){
+      console.log('event:', event);
+  }
+
   ngOnInit() {
 
   }
