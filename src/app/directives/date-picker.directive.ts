@@ -8,6 +8,7 @@ export class DatePickerDirective {
 
   constructor(private el: ElementRef) {}
   ngAfterViewInit() {
-    $(this.el.nativeElement).daterangepicker();
+    $(this.el.nativeElement).datepicker();
+    // $(this.el.nativeElement).daterangepicker();
   }
 }
