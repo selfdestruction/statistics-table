@@ -12,7 +12,7 @@ export class APIService {
       user$ = new ReplaySubject(1);
       constructor(private _http: Http) {
 
-            this.baseUrl = 'http://cp.itlogic-ua.com/statistic/api';
+            this.baseUrl = '/statistic/api';
             this._http.get(`${this.baseUrl}/user`)
                 .map(response => response.json())
                 .subscribe(this.user$);
